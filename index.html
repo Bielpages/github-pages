@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestão Escolar</h1>
+    </header>
+
+    <section id="avisos">
+        <h2>Criar Aviso</h2>
+        <form id="form-aviso">
+            <input type="text" id="titulo" placeholder="Título do Aviso" required>
+            <textarea id="descricao" placeholder="Descrição do Aviso" required></textarea>
+            <input type="date" id="data" required>
+            <button type="submit">Criar Aviso</button>
+        </form>
+
+        <div id="lista-avisos">
+            <!-- Cards de Avisos serão inseridos aqui -->
+        </div>
+    </section>
+
+    <section id="atividades">
+        <h2>Criar Atividade</h2>
+        <form id="form-atividade">
+            <select id="turma" required>
+                <option value="">Selecione a Turma</option>
+                <option value="1A">1º Ano A</option>
+                <option value="2B">2º Ano B</option>
+                <option value="3C">3º Ano C</option>
+            </select>
+            <input type="text" id="habilidade" placeholder="Habilidade da BNCC" required>
+            <textarea id="instrucoes" placeholder="Instruções para a Atividade"></textarea>
+            <button type="submit">Criar Atividade</button>
+        </form>
+
+        <div id="lista-atividades">
+            <!-- Atividades geradas serão exibidas aqui -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gestão Escolar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
